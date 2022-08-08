@@ -1,2 +1,19 @@
 ---
 # tasks file for aci-configure-tenats
+- name: Set login credentials
+  set_fact:
+    aci_login: &aci_login
+      hostname: '{{ ansible_hostname }}'
+      username: '{{ APIC_USERNAME }}'
+      password: '{{ APIC_PASSWORD }}'
+
+
+- name: Add a new tenant
+  cisco.aci.aci_tenant:
+    <<: *aci_login
+    validate_certs: no
+    tenant: "Fabios_Tenant"
+    description: "WLAN_tenant"
+    state: present
+  delegate_to: localhost
+  register: log

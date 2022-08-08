@@ -1,0 +1,9 @@
+---
+
+- name: Deploy topology using ACI model
+  hosts: ACI
+  gather_facts: no
+  connection: local
+
+  roles:
+    - aci-configure-tenant
