@@ -1,2 +1,2 @@
-[ACI-APIC]
+[ACI]
 aci1 ansible_host=sandboxapicdc.cisco.com ansible_connection=local
