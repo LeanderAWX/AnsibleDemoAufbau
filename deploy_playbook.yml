@@ -1,7 +1,7 @@
 ---
 
 - name: Deploy topology using ACI model
-  hosts: ACI
+  hosts: aci
   gather_facts: no
   connection: local
 
