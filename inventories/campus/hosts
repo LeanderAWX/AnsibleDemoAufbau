@@ -1,0 +1,3 @@
+[switche]
+testIOSXESandbox ansible_host=sandbox-iosxe-latest-1.cisco.com
+

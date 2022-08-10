@@ -1,2 +1,2 @@
 [aci]
-aci1Prod ansible_host=sandboxapicdc.cisco.com ansible_connection=local
+aciSandbox ansible_host=sandboxapicdc.cisco.com ansible_connection=local
