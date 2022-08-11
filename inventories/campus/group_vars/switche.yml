@@ -1,6 +1,6 @@
 ---
-username: "developer"
-password: "C1sco12345"
+username: "LeanderDam"
+password: "BQJVYFJG"
 
 ansible_network_os: cisco.ios.ios
 ansible_connection: ansible.netcommon.network_cli
