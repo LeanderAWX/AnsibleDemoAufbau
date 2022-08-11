@@ -6,8 +6,8 @@
   tasks:
     - name: run show version on remote devices
       cisco.ios.ios_command:
-      commands: show version
-    register: output
+        commands: show version
+      register: output
 
     - name: print output
       debug:
