@@ -1,0 +1,25 @@
+---
+# tasks file for aci-configure-leafs
+- name: Set login credentials
+  set_fact:
+    aci_login: &aci_login
+      hostname: '{{ inventory_hostname }}'
+      username: '{{ APIC_USERNAME }}'
+      password: '{{ APIC_PASSWORD }}'
+      use_proxy: '{{ APIC_USE_PROXY }}'
+      validate_certs: '{{ APIC_VALIDATE_CERTS }}'
+
+- name: create leaf interface access policy groups
+  aci_rest:
+    <<: *aci_login
+    path: /api/node/mo/uni.json
+    method: post
+    content: {
+      "infraAccPortGrp": {
+        "attributes": {
+          "dn": "uni/infra/funcprof/accportgrp-{{ Test12345 }}",
+          "name": "{{ Test12345 }}",
+          "status": "{{ default ('created,modified') }}"
+        }
+      }
+    }

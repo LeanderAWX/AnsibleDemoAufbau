@@ -12,7 +12,7 @@
   cisco.aci.aci_tenant:
     <<: *aci_login
     validate_certs: no
-    tenant: "Fabios_Tenant"
+    tenant: "Wabios_Tenant"
     description: "WLAN_tenant"
     state: present
   delegate_to: localhost

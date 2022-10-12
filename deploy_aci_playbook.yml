@@ -6,4 +6,5 @@
   connection: local
 
   roles:
-    - aci-configure-tenant
+    #- aci-configure-tenant
+    - aci-configure-interface-policy-groups

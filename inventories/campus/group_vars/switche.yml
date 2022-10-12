@@ -1,6 +1,6 @@
 ---
-username: "developer"
-password: "C1sco12345user"
+ansible_username: "developer"
+ansible_password: "C1sco12345user"
 
 ansible_network_os: ios
-ansible_connection: network_cli
+ansible_connection: local
