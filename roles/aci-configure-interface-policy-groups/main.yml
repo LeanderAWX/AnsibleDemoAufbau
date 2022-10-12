@@ -15,9 +15,10 @@
     content: {
       "infraAccPortGrp": {
         "attributes": {
-          "dn": "uni/infra/funcprof/accportgrp-{{ Test12345 }}",
-          "name": "{{ Test12345 }}",
-          "status": "{{ default ('created,modified') }}"
+          "annotation": "",
+          "descr": "",
+          "dn": "uni/infra/funcprof/accportgrp-Test1234",
+          "name": "Test1234",
         }
       }
     }
