@@ -10,21 +10,3 @@
 - pause:
     seconds: 1      
 
-- name: create leaf interface access policy groups
-  aci_rest:
-    <<: *aci_login
-    path: /api/node/mo/uni.json
-    method: post
-    content: {
-      "infraAcccPortGrp": {
-        "attributes": {
-          "annotation": "",
-          "descr": "",
-          "dn": "uni/infra/funcprof/accportgrp-Test1234",
-          "name": "Test1234",
-        }
-      }
-    }
-
-- pause:
-    seconds: 1
