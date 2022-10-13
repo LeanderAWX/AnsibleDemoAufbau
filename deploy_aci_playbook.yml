@@ -7,5 +7,5 @@
 
   roles:
     - aci-configure-tenant
-    - aci-configure-interface-policy-groups
+    - test
  
