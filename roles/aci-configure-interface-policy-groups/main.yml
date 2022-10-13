@@ -7,6 +7,9 @@
       username: '{{ APIC_USERNAME }}'
       password: '{{ APIC_PASSWORD }}'
 
+- pause:
+    seconds: 1      
+
 - name: create leaf interface access policy groups
   aci_rest:
     <<: *aci_login
@@ -22,3 +25,6 @@
         }
       }
     }
+
+- pause:
+    seconds: 1test
