@@ -8,18 +8,13 @@
       password: '{{ APIC_PASSWORD }}'
 
 
-- name: create leaf interface access policy groups
-  aci_rest:
+- name: Add a new tenant
+  cisco.aci.aci_tenant:
     <<: *aci_login
-    path: /api/node/mo/uni.json
-    method: post
-    content: {
-      "infraAcccPortGrp": {
-        "attributes": {
-          "annotation": "",
-          "descr": "",
-          "dn": "uni/infra/funcprof/accportgrp-Test1234",
-          "name": "Test1234",
-        }
-      }
-    }
+    validate_certs: no
+    tenant: "Wabios_Tenant"
+    description: "WLAN_tenant"
+    state: present
+  delegate_to: localhost
+  register: log
+    

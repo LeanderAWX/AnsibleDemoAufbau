@@ -1,22 +1,25 @@
 ---
 # tasks file for aci-configure-tenats
-- name: Set login credentials
-  set_fact:
-    aci_login: &aci_login
-      hostname: '{{ ansible_host }}'
-      username: '{{ APIC_USERNAME }}'
-      password: '{{ APIC_PASSWORD }}'
+- name: Deploy topology using ACI model
+  hosts: aci
+  gather_facts: no
+  connection: local
 
-
-- name: Add a new tenant
-  cisco.aci.aci_tenant:
-    <<: *aci_login
-    validate_certs: no
-    tenant: "Wabios_Tenant"
-    description: "WLAN_tenant"
-    state: present
-  delegate_to: localhost
-  register: log
-    - name: Say hello
-      debug:
-        msg: 'Hello, World'
+- name: create leaf interface access policy groups
+  aci_rest:
+    hostname: '{{ ansible_host }}'
+    username: '{{ APIC_USERNAME }}'
+    password: '{{ APIC_PASSWORD }}'
+    path: /api/node/mo/uni.json
+    method: post
+    content: {
+      "infraAcccPortGrp": {
+        "attributes": {
+          "annotation": "",
+          "descr": "",
+          "dn": "uni/infra/funcprof/accportgrp-Test1234",
+          "name": "Test1234",
+        }
+      }
+    }
+    
