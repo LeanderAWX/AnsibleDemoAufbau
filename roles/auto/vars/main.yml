@@ -1,0 +1,4 @@
+---
+# vars file for aci-configure-tenats
+APIC_USERNAME: "admin"
+APIC_PASSWORD: "!v3G@!4@Y"
