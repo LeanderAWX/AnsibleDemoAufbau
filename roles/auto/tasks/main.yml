@@ -18,11 +18,102 @@
     content: {
       "infraAccPortGrp": {
         "attributes": {
-          "annotation": "",
-          "descr": "",
-          "dn": "uni/infra/funcprof/accportgrp-Test1234",
-          "name": "Test1234",
+          "dn": "uni/infra/funcprof/accportgrp-TestJan",
+          "name": "TestJan",
+          "status": ""
+        },
+        "children": [
+          {
+            "infraRsStpIfPol": {
+              "attributes": {
+                "tnStpIfPolName": ""
+              }
+            }
+          },
+          {
+            "infraRsStormctrlIfPol": {
+              "attributes": {
+                "tnStormctrlIfPolName": ""
+              }
+            }
+          },
+          {
+            "infraRsMonIfInfraPol": {
+              "attributes": {
+                "tnMonInfraPolName": ""
+              }
+            }
+          },
+          {
+            "infraRsMcpIfPol": {
+              "attributes": {
+                "tnMcpIfPolName": ""
+              }
+            }
+          },
+          {
+            "infraRsMacsecIfPol": {
+              "attributes": {
+                "tnMacsecIfPolName": ""
+              }
+            }
+          },
+          {
+            "infraRsAttEntP": {
+              "attributes": {
+                "tDn":  ""
+              }
+            }
+          },
+          {
+            "infraRsCdpIfPol": {
+              "attributes": {
+                "tnCdpIfPolName": "Hallo"
+              }
+            }
+          },
+          {
+            "infraRsL2IfPol": {
+              "attributes": {
+                "tnL2IfPolName": ""
+              }
+            }
+          },
+          {
+            "infraRsCoppIfPol": {
+              "attributes": {
+                "tnCoppIfPolName": ""
+              }
+            }
+          },
+          {
+            "infraRsLldpIfPol": {
+              "attributes": {
+                "tnLldpIfPolName": ""
+              }
+            }
+          },
+          {
+            "infraRsFcIfPol": {
+              "attributes": {
+                "tnFcIfPolName": ""
+              }
+            }
+          },
+          {
+            "infraRsHIfPol": {
+              "attributes": {
+                "tnFabricHIfPolName": ""
+              }
+            }
+          },
+          {
+            "infraRsL2PortSecurityPol": {
+              "attributes": {
+                "tnL2PortSecurityPolName": ""
+              }
+            }
+          }
+        ]
         }
       }
-    }
-    
