@@ -6,6 +6,7 @@
       hostname: '{{ ansible_host }}'
       username: '{{ APIC_USERNAME }}'
       password: '{{ APIC_PASSWORD }}'
+      validate_certs: no
 
 
 - name: create leaf interface access policy groups
