@@ -6,6 +6,6 @@
   connection: local
 
   roles:
-    - aci-configure-tenant
+    #- aci-configure-tenant
     - test
  
