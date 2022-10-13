@@ -16,7 +16,7 @@
     path: /api/node/mo/uni.json
     method: post
     content: {
-      "infraAcccPortGrp": {
+      "infraAccPortGrp": {
         "attributes": {
           "annotation": "",
           "descr": "",
